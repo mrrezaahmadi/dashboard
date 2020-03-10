@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="clock">
+            <div class="time">
+                <span>26 : </span><span style="font-weight: bold;">15</span>
+            </div>
+            <div class="date">
+                یکشنبه، 12 فروردین
+            </div>
+        </div>
+        <div class="information">
+            <div class="info-img">
+                
+            </div>
+            <div class="info-text">
+                <span>محمدرضا احمدی</span>
+                <br>
+                <span style="font-weight: 100; color: gray;">توسعه دهنده</span>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="list">
+                <ul>
+                <li><i class="fa fa-home"></i>داشبورد</li>
+                <li><i class="fa fa-inbox"></i>صندوق پیام<span class="dropIcon inboxs"></span></li>
+                <li><i class="fa fa-ticket"></i>تیکت<span class="dropIcon">&#9662;</span></li>
+                <li><i class="fa fa-book"></i>دانشنامه<span class="dropIcon">&#9662;</span></li>
+                <ul>
+                    <li>همه دانشنامه ها</li>
+                    <li>پیشنویس ها</li>
+                </ul>
+                <li><i class="fa fa-rss"></i>اخبار<span class="dropIcon">&#9662;</span></li>
+                <li><i class="fa fa-cog"></i>مدیریت<span class="dropIcon">&#9662;</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="header">
+            <div class="A item center card">
+                <div class="text">
+                        <div class="text-up">تعداد کل کاربران</div><br>
+                        <div class="text-middle">235</div><br>
+                        <div class="text-bottom"><span style="color: purple; font-weight: 500;">145</span> <span>کاربر فعال</span></div>
+                </div>
+                <div class="pic"><img src="/PNG/users.png" alt="users"></div>
+            </div>
+            <div class="B item center card">
+                <div class="text">
+                    <div class="text-up">تعداد کل تیکت ها</div><br>
+                    <div class="text-middle">856</div><br>
+                    <div class="text-bottom"><span style="color: purple; font-weight: 500;">523</span> <span>تیکت بسته شده</span></div>
+                </div>
+                <div class="pic"><img src="/PNG/tickets.png" alt="tickets"></div>
+            </div>
+            <div class="C item center card">
+                <div class="text">
+                    <div class="text-up">تعداد کل دانشنامه ها</div><br>
+                    <div class="text-middle">619</div><br>
+                    <div class="text-bottom"><span style="color: green; font-weight: 500;">%4.6</span> <span>نسبت به ماه گذشته</span></div>
+                </div>
+                <div class="pic"><img src="/PNG/encyclopedias.png" alt="encyclopedias"></div>
+            </div>
+            <div class="D item center card">
+                <div class="text">
+                    <div class="text-up">تعداد کل خبر ها</div><br>
+                    <div class="text-middle">1253</div><br>
+                    <div class="text-bottom"><span style="color: red; font-weight: 500;">%6.2</span> <span>نسبت به ماه گذشته</span></div>
+                </div>
+                <div class="pic"><img src="/PNG/messages.png" alt="messages"></div>
+            </div>
+            
+        </div>
+        <div class="main">
+            <div class="rightSide">
+                <div class="center card textArea">
+                    <div class="textAreaIcon">
+                        <i class="fa fa-edit"></i>
+                    </div>
+                </div>
+                <div class="center card options">
+                    <ul>
+                        <li style="padding-bottom: .8rem; border-bottom: 3px rgb(82, 27, 209) solid; font-weight: 700; color:black">تیکت های ستاره دار<div class="notification"><p>45</p></div></li>
+                        <li>باز (همراه پاسخ)<div class="notification"><p>15</p></div></li>
+                        <li >باز (بدون پاسخ)<div class="notification"><p>184</p></div></li>
+                        <li>بسته<div class="notification"><p>286</p></div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="leftSide">
+                <div class="center card performance">
+                        <ul>
+                            <li style="padding-bottom: .8rem; border-bottom: 3px rgb(82, 27, 209) solid; font-weight: 700; color:black">خلاصه عملکرد</li>
+                            <li>
+                                <select name="" class="dropdown">
+                                    <option value="">ماه گذشته</option>
+                                    <option value="">ماه جاری</option>
+                                </select>
+                            </li>
+                        </ul>
+                </div>
+                <div class="center card inbox">
+                    <ul>
+                        <li style="padding-bottom: .8rem; border-bottom: 3px rgb(82, 27, 209) solid; font-weight: 700; color:black">صندوق پیام</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

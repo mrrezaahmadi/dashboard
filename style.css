@@ -1,16 +1,16 @@
 /* Mohammad reza ahmadi */
 @font-face {
     font-family: Shabnam;
-    src: url('/Fonts/Shabnam.eot');
-    src: url('/Fonts/Shabnam.woff') format('woff'),
-         url('/Fonts/Shabnam.ttf') format('truetype');
+    src: url('./Fonts/Shabnam.eot');
+    src: url('./Fonts/Shabnam.woff') format('woff'),
+         url('./Fonts/Shabnam.ttf') format('truetype');
     font-weight: normal;
   }
   
   @font-face {
     font-family: Shabnam;
     src: url('Shabnam-Light.eot');
-    src: url('/Fonts/Shabnam-Bold.ttf') format('truetype');
+    src: url('./Fonts/Shabnam-Bold.ttf') format('truetype');
     font-weight: bold;
   }
   
@@ -18,7 +18,7 @@
   @font-face {
     font-family: Shabnam;
     src: url('Shabnam-Light.eot');
-    src: url('/Fonts/Shabnam-Light.ttf') format('truetype');
+    src: url('./Fonts/Shabnam-Light.ttf') format('truetype');
     font-weight: 300;
   }
   

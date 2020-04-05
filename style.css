@@ -40,12 +40,13 @@ body {
     width: 85%;
     right: 15%;
     display: grid;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 10fr;
 }
 .navbar {
     width: 15%;
     height: 100vh;
     position: fixed;
+    z-index: 3;
     display: grid;
     grid-template-rows: 2fr 1fr 7fr;
 }
@@ -55,11 +56,11 @@ body {
 }
 .leftSide {
     display: grid;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 3fr 3fr 3fr;
 }
 .rightSide {
     display: grid;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 3fr 3fr 3fr;
 }
 .header {
     display: flex;
@@ -247,8 +248,10 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
 }
 
 .inbox {
-    height: fit-content;
+    /* height: fit-content; */
 }
+
+
 
 .inbox ul {
     border-bottom: 1px rgb(233, 226, 226) solid;

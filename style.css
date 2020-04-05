@@ -246,6 +246,10 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
     border-color: rgb(68, 0, 255);
 }
 
+.inbox {
+    height: fit-content;
+}
+
 .inbox ul {
     border-bottom: 1px rgb(233, 226, 226) solid;
 }
@@ -362,5 +366,79 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
 
 }
 
-/* Forth cell */
+/* Inbox Table */
+
+.inbox-table {
+    font-family: 'Shabnam';
+    display: flex;
+
+}
+
+.inbox-table-content {
+    display: flex;
+    height: fit-content;
+}
+
+.ITC-pic {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ITC-pic-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: skyblue;
+}
+
+.ITC-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.ITC-text div {
+    margin: 3px 0;
+}
+
+.ITC-text-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ITC-text-head-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 35%;
+}
+
+.ITC-text-head-notification {
+    align-self: center;
+    padding: 2px;
+    height: 15px;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.ITC-text-head-time {
+    align-self: center;
+    font-size: 13px;
+    color: rgb(63, 63, 63);
+}
+
+.ITC-text-title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ITC-text-description {
+    font-size: 14px;
+    color: grey;
+}
+
 

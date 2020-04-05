@@ -26,18 +26,28 @@
 /* div {
     border: 1px red solid;
 } */
+
+
 body {
     background-color: rgb(248, 248, 248);
     box-sizing: border-box;
     margin: 0;
     direction: rtl;
-    display: grid;
-    grid-template-columns: 2fr 8fr;
     height: 100vh;
 }
 .dashboard {
+    position: relative;
+    width: 85%;
+    right: 15%;
     display: grid;
     grid-template-rows: 2fr 8fr;
+}
+.navbar {
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 2fr 1fr 7fr;
 }
 .main {
     display: grid;
@@ -50,10 +60,6 @@ body {
 .rightSide {
     display: grid;
     grid-template-rows: 60% 40%;
-}
-.navbar {
-    display: grid;
-    grid-template-rows: 2fr 1fr 7fr;
 }
 .header {
     display: flex;
@@ -195,9 +201,12 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
 
 /* navbar finished */
 
+.options {
+    height: fit-content;
+}
+
 .options ul, .inbox ul, .performance ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
     justify-content: flex-start;
     font-family: 'Shabnam';
@@ -206,7 +215,7 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
 }
 
 .options li, .inbox li, .performance li {
-    margin: 1rem 2rem;
+    margin: 0 20px;
 }
 
 .notification {
@@ -226,7 +235,7 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
     justify-content: space-between;
 }
 
-.performance select {
+.dropdown {
     font-family: 'Shabnam';
     padding: .5rem;
     border-radius: 5px;
@@ -249,7 +258,109 @@ background: linear-gradient(135deg, rgba(250,106,133,1) 29%, rgba(238,42,42,1) 1
 }
 
 
+/*//////////////////NEW CHANGEs///////////////*/
+
+.table {
+    /* border: 1px black solid; */
+    font-family: 'Shabnam';
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, td, tr {
+    height: 68px;
+    border-bottom: 2px #F8F8F8 solid;
+}
 
 
+.table th {
+    font-size: 16px;
+    text-align: right;
+    font-weight: 500;
+    background-color: #F8F8F8;
+}
 
+.table div {
+    margin: 1px 2px;
+}
+
+
+.table-color {
+    height: 40px;
+    width: 8px;
+    background-color: rgb(85, 32, 233);
+    border-radius: 5px;
+}
+/* First Cell */
+
+.first-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.fc-upper-text {
+
+}
+
+.fc-lower-text {
+    display: flex;
+    flex-direction: row;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fc-message-type {
+    display: flex;
+}
+
+.fc-type {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 2px;
+
+}
+
+.fc-message-pins {
+    color: blue;
+}
+
+/* Second Cell */
+
+.second-cell {
+    display: flex;
+}
+
+.sc-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(98, 218, 98);
+}
+
+.sc-upper-text {
+    font-size: 14px;
+    color: grey;
+}
+
+.sc-lower-text {
+    font-size: 12px;
+    color: grey;
+}
+
+/* Third Cell */
+
+.third-cell {
+    display: flex;
+}
+
+.tc-priority-pic {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+
+/* Forth cell */
 

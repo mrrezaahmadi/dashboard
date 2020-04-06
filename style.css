@@ -24,7 +24,7 @@
   
 
 /* div {
-    border: 1px red solid;
+    border: 1px black solid;
 } */
 
 
@@ -34,6 +34,56 @@ body {
     margin: 0;
     direction: rtl;
     height: 100vh;
+}
+
+#searchbar {
+    font-family: 'Shabnam';
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+}
+
+#searchbar input {
+    font-family: 'Shabnam';
+    font-size: 20px;
+    height: 75%;
+    width: 75%;
+    align-self: center;
+    border: transparent;
+}
+
+input::placeholder {
+    font-family: 'Shabnam';
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.searchbar-notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.SN-bell {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+}
+
+.SN-message {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 25px;
 }
 .dashboard {
     position: relative;

@@ -43,7 +43,7 @@ body {
     position: fixed;
     top: 0;
     background-color: white;
-    display: flex;
+    display: none;
 }
 
 #searchbar input {
